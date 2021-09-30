@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/stylesheet.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a692334d4f.js" crossorigin="anonymous"></script>
+
+        <!-- icon  -->
+        <link href="img/logo.png" rel="icon">
+
+        <!-- website title-->
+        <title>Loka Laut</title>
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "200px";
+                document.getElementById("main").style.marginLeft = "200px";              
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+            }
+
+            function openfilterNav() {
+                document.getElementById("filterOption").style.width = "200px";
+                document.getElementById("filter-main").style.marginLeft = "200px";
+            }
+
+            function closefilterNav() {
+                document.getElementById("filterOption").style.width = "0";
+                document.getElementById("filter-main").style.marginLeft= "0";
+            }
+
+            function openloadNav() {
+                document.getElementById("loadFilterOption").style.width = "200px";
+                document.getElementById("load-main").style.marginLeft = "200px";
+            }
+
+            function closeloadNav() {
+                document.getElementById("loadFilterOption").style.width = "0";
+                document.getElementById("load-main").style.marginLeft= "0";
+            }
+        </script> 
+    </head>    
+    <body>
+        <div class="header">
+            <div id="mySidebar" class="sidebar">
+                <img src="img/logo.png">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+                <br>
+                <a href="#"><i class="fas fa-th"></i> Dashboard</a>
+                <a href="#"><i class="fab fa-edge"></i> Netview Edge</a>
+                <a href="#"><i class="fas fa-cloud"></i> Netview Remote</a>
+                <a href="#"><i class="fas fa-bullseye"></i> Netview Central</a>
+                <a href="#"><i class="fas fa-chart-bar"></i> Netview Analytic</a>
+                <a href="#"><i class="fas fa-cog"></i> Setting</a>
+                <a href="#"><i class="fas fa-users-cog"></i> Back Office</a>
+                <a href="#"><i class="fas fa-user"></i> Profile</a>
+            </div>
+            <div id="main">
+                <button class="openbtn" onclick="openNav()"><i class="fas fa-align-left"></i></button>
+            </div>   
+            <div class="header-logo">
+                <a class="logo"><img src="img/logo.png">Loka Laut</a>
+                <span class="dashboard">Dashboard</span>
+                <a class="gmail">Bloderumaru614@gmail.com</a>
+                <a href="log-in.html" class="login-btn"><i class="fas fa-user-circle"></i> </a>
+            </div>    
+        </div>
+        
+        <div class="main">
+            <div id="filterOption" class="filter-sidebar">
+            <h2>Filter Option</h2> 
+            <a href="javascript:void(0)" class="closebtn" onclick="closefilterNav()">x</a>
+            <ul class="option">Filter Option Edge</ul>
+            <div class="dropdown">
+                <button class="dropbtn">Source Group <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <button class="dropbtn">Source <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <button class="dropbtn">Destination Group <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <button class="dropbtn">Destination <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <button class="dropbtn">KPI <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <button class="dropbtn">Last 7 Days <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <button style="border: 100px; margin: 10px; height: 40px; width: 110px; text-align: center; background-color: #000; color: #ffff; ">Querry</button>
+            <i class="fas fa-ellipsis-v" style="float: right; margin: 20px 20px;"></i>
+            <ul class="option">Filter Option Remote</ul>
+            <div class="dropdown">
+                <button class="dropbtn">Source Group <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <button class="dropbtn">Source <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <button class="dropbtn">Destination Group <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <button class="dropbtn">Destination <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <button class="dropbtn">KPI <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <button class="dropbtn">Last 7 Days <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <button style="border: 100px; margin: 10px; height: 40px; width: 110px; text-align: center; background-color: #000; color: #ffff; ">Querry</button>
+            <i class="fas fa-ellipsis-v" style="float: right; margin: 20px 20px;"></i>
+            <ul class="option">Filter option Central</ul>
+            <div class="dropdown">
+                <button class="dropbtn">Source Group <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <button class="dropbtn">Source <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <button class="dropbtn">Destination Group <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <button class="dropbtn">Destination<i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <button class="dropbtn">KPI <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <button class="dropbtn">Last 7 Days <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <button style="border: 100px; margin: 10px; height: 40px; width: 110px; text-align: center; background-color: #000; color: #ffff; ">Querry</button>
+            <i class="fas fa-ellipsis-v" style="float: right; margin: 20px 20px;"></i>
+            </div>
+            <div id="filter-main">
+                <button class="open-btn" onclick="openfilterNav()"><i class="fas fa-cog"></i></button>
+            </div>
+            <br>
+            <div id="loadFilterOption" class="loadfilter-sidebar">
+                <h2>Load Filter Option</h2>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeloadNav()">x</a>
+                <div class="load">
+                    <ul class="option">Netview Edge</ul>
+                        <div class="loadd">
+                            <li>Tsel Semarang - RTT and Packet Loss</li>
+                            <li>Tsel Kalimantan - RTT and Packet Loss</li>
+                            <li>Tsel Jakarta - RTT and Packet Loss</li>
+                            <li>Tsel Bali - RTT and Packet Loss</li>
+                            <li>Tsel Sumatra - RTT and Packet Loss</li>
+                        </div>
+                    <ul class="option">Netview Remote</ul>
+                        <div class="loadd">
+                            <li>Test RTT - RTT and Packet Loss</li>
+                            <li>Test RTT - RTT and Packet Loss</li>
+                            <li>Test RTT - RTT and Packet Loss</li>
+                            <li>Test RTT - RTT and Packet Loss</li>
+                            <li>Tester Child Remot - RTT and Packet Loss</li>
+                        </div>
+                    <ul class="option">Netview Central</ul>
+                        <div class="loadd">
+                            <li>Tester Child Remot - RTT and Packet Loss</li>
+                            <li>Test Traceroute - Traceroute</li>
+                            <li>Test Traceroute - Traceroute</li>
+                            <li>Test Traceroute - Traceroute</li>
+                            <li>Tester Child Remot Traceroute - Traceroute</li>
+                        </div>
+                </div>
+            </div>
+            <div id="load-main">
+                <button class="openload-btn" onclick="openloadNav()"><i class="far fa-folder"></i></button>
+            </div>
+        </div>
+        
+        <div class="footer">
+          
+        </div>
+    </body>
+</html>
